@@ -1,0 +1,29 @@
+{
+  "name": "cypress-automation-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "lint": "prettier --write '**/*.{ts,json}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoMAndrade/cypress-automation-suite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoMAndrade/cypress-automation-suite/issues"
+  },
+  "homepage": "https://github.com/FernandoMAndrade/cypress-automation-suite#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/cypress": "^0.1.6",
+    "@types/mocha": "^10.0.10",
+    "cypress": "14.0.3",
+    "prettier": "3.5.2",
+    "typescript": "5.7.3"
+  }
+}
