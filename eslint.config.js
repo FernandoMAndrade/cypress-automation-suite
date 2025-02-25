@@ -5,7 +5,6 @@ import tsparser from '@typescript-eslint/parser';
 
 const tsConfig = {
   files: ['**/*.ts'],
-  ignores: ['**/*.spec.ts'],
   languageOptions: {
     parser: tsparser,
     parserOptions: { project: './tsconfig.json' },

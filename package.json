@@ -4,8 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:open": "cypress open --config-file ./config/api.config.ts",
+    "cy:run": "cypress run --config-file ./config/api.config.ts",
     "lint": "prettier --write '**/*.{ts,json}' && eslint --fix --ext .ts ."
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/FernandoMAndrade/cypress-automation-suite#readme",
   "description": "",
   "devDependencies": {
+    "@cypress/grep": "^4.1.0",
     "@eslint/js": "^9.21.0",
     "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.25.0",
