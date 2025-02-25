@@ -10,7 +10,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@services/*": ["api/services/*"],
+      "@interfaces/*": ["api/interfaces/*"]
     }
   },
   "include": ["**/*.ts"],

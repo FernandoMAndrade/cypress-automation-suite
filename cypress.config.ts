@@ -1,3 +1,4 @@
+import registerGrepPlugin from '@cypress/grep/src/plugin';
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
@@ -10,7 +11,12 @@ export default defineConfig({
       runMode: 1,
       openMode: 0,
     },
+    env: {
+      grepFilterSpecs: true,
+    },
     setupNodeEvents(on, config) {
+      registerGrepPlugin(config);
+
       on('task', {
         log(message) {
           // eslint-disable-next-line no-console
@@ -18,6 +24,7 @@ export default defineConfig({
           return null;
         },
       });
+
       return config;
     },
   },
